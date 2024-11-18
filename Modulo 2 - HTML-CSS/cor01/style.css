@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+:root{
+    --bgcolor-main: #5b5e61; 
+
+}
+
+body{
+    background-color: var(--bgcolor-main);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/SF.ico" type="image/x-icon"><!--Essa parte é para adicionar o icone favorito na aba do navegador-->
+    <style>
+        body{
+            background-color: darkgray;
+        }
+    </style>
+    <title> Midia em HTML5 </title>
+</head>
+<body>
+  
+   <h1>Imagens dinâmicas com HTML5</h1> 
+
+   <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente altere o tamanho do navegador</p>
+
+   <picture>
+    <!--Antes de tudo tem que cropar a imagem (reduzir o tamanho dela no GIMP) e fazer as imagens de diversos tamanho para atender varios dispositivos-->
+       <source media="(max-width: 720px)" srcset="imagens/Pequena.png" type="image/png"><!--responsavel pela subtistuição para uma imagem menor da mesma imagem --> 
+       <source media="(max-width: 1000px)" srcset="imagens/Media.png" type="image/png"><!--responsavel pela subtistuição para uma imagem menor da mesma imagem-->
+    <img src="imagens/Grande.png" alt="Imagem Flexível">
+</picture>
+<h1>Reproduzindo  Áudio</h1>
+<p>Vamos aprender a reproduzir áudios em HTML5</p>
+<audio preload="metadata"  controls><!--autoplay-->
+    <source src="midia/Panic.mp3" type="audio/mpeg">
+    <source src="midia/Panic.ogg" type="audio/ogg">
+    <source src="midia/Panic.wav" type="audio/wav">
+
+    <p>Infelizmente o seu navegardor não consegue reproduzir o arquivo MP3. Faça o download clicando<a href="midia/Panic.mp3"> aqui.</a></p>        
+</audio>
+     <p>Infelismente o seu navegardor não consegue reproduzir o arquivo MP3. Faça o download clicando<a href="midia/Panic.mp3"> aqui.</a></p>
+   </audio><!-- MP3 WAV OGG-->
+
+   
+
+
+
+
+
+
+
+</body>
+</html>

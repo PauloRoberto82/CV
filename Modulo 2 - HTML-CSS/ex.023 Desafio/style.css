@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@import url(fontes/idroid.otf);
+@font-face {
+    font-family:'Android'; 
+    src: url('fontes/idroid.otf') 
+    format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --cor0:#c5ebd6;
+    --cor1:#83E1AD;
+    --cor2:#3DDC84;
+    --cor3:#2FA866;
+    --cor4:#1A5C37;
+    --cor5:#063d1e;
+}
+
+
+.texto-fonte{
+    text-align: left;
+    font-family:Android;
+    color:var(--cor4);
+}
+.texto-fonte2{
+    font-family: Android;
+    text-align:left;
+    color:var(--cor5);
+    background: linear-gradient(to right, #b7e6d4fe, #b7d3c8fe,#f5f8f7 );
+}
+.verde{
+    color: var(--cor4);
+}
+
+body{
+    
+  font-family: Arial, Helvetica, sans-serif;
+  color:black;
+  background-color: var(--cor1);
+}
+
+#h1-head{
+    margin: 0;
+    text-align: center;
+    color:aliceblue;
+    text-shadow: gray;
+}
+
+header{
+    margin: -8px;
+    text-align: center;
+    background: linear-gradient(to top, #036b50,#2a7a65,#58c7a6);
+    width: 1920px;
+    height: 140px;
+    
+    
+}
+
+#link-head, a{
+   color:aliceblue;
+   text-decoration: none;
+   padding-left: 10px;
+   float: left;
+
+}
+
+main{
+    min-width: 400px;
+    max-width: 800px;
+}
+
+.conteudo{
+    text-align: center;
+    background-color: aliceblue;
+    padding: 5px;
+    margin: 8px 100px;
+    width: 450px;
+   
+}
+
+.video{
+    background-color: #02633e;
+    margin: -5px;
+    
+}
+
+.doces{
+    background-color:  #76c8af;
+    border-radius: 10px 10px;
+    box-shadow: 5px 5px 10px rgba(200, 196, 196, 0.733); /*1= andar para o lado ,2= andar para baixo,3=espalhar, 4= quantidade de cor e transparencia*/
+    
+    padding: 0px;
+    margin:15px 10px;
+}
+
+ul{
+    list-style-type: '\2714\0020\0020';
+    columns:2;
+    list-style-position: inside;
+}
+
+#h1-ult{
+    text-align: left;
+    border-radius:10px 10px 0px 0px;
+    font-size: 15px;
+    background-color: #2a7a65;
+    color:aliceblue; 
+    border:10px 10px;
+    padding: 10px 10px;
+}
+#p-ult{
+  float:left;
+}
+
+footer{
+    text-align: center;
+    background-color: #2a7a65;
+    color: white;
+    width: 1920px;
+    margin: -5px;
+}

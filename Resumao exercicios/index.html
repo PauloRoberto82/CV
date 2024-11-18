@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"><!--CSS da pagina Resumao-->
+    <link rel="shortcut icon" href="imagens/SF.ico" type="image/x-icon"><!--Essa parte é para adicionar o icone favorito na aba do navegador-->
+
+    <style>  
+
+        body{
+            background-color: grey;
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+    
+        </style> <!--Essa parte é como se tivesse sendo representada pelo CSS-->
+    <title>Exercicio 2</title>
+</head>
+<body>
+
+    <div class="topnav">
+    <a class="active" href="#index.html">Home</a>
+    <a href="pag2.html">Pag. 02</a>
+    <a href="cor01.html">Cor 01 </a>
+    <a href="cor02.html">Cor 02 </a>
+    <a href="cor03.html">Cor 03 </a>
+    
+</div>
+
+
+
+    <hr> <!--Linha Horizontal horizon row-->
+    <h1> Parágrafo e quebra de linha <h1><!--Título-->
+    <hr><!--Linha Horizontal horizon row-->
+    <h2> Esse é o 1º doc. HTML !! </h2><!-- h1,h2,h3,h4,h5,h6 ajustam o tamanho das letras-->
+    
+    <p> Primeiros passos: <br> <!--Para começar um parágrafo <p> -->
+        <h4> 
+Lorem ipsum criado para construir um parágrafo automaticamente .</h4> <!--Lorem + enter cria um parágrafo -->
+</p>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, deserunt. Ut, eligendi totam dolor rerum dolores fuga neque doloribus tempora excepturi expedita, voluptates ex? Sapiente adipisci ipsa mollitia ducimus impedit.<!--Olá, é muito difícil se livrar da gordura. Eu odeio ir embora. Como escolher todas as dores das coisas, fugir das dores, nem guardar os momentos convenientes para as dores, dos prazeres? A própria resiliência que lideramos nos impede de adquirir sabedoria-->
+<p>
+Precisa quebrar o texto em algum 
+lugar especifico?<br>como esse,<br><!--quebra de linha e texto onde estiver inserido -> break row--> 
+voce pode usar a tag:
+&lt; br &gt;.<!-- LESS THAN '<'  / GREATER THAN '>' -->
+<br> <!--quebra de linha e texto onde estiver inserido -> break row-->
+<p> adicionar símbolos especiais:
+&reg;<!--Símbolos especiais registrado-->
+&trade;<!--Símbolos especiais Trade Mark marca comercial-->
+&euro;<!--Símbolos especiais do euro-->
+&pound;<!--Símbolos especiais da libra-->
+&uparrow; &uarr; <!--Símbolos especiais seta pra cima em duas formas-->
+
+&lt; br &gt;<!--Simbolos de < e > -->
+</p>
+<p>Vamos adicionar alguns emoji: <br> 
+    &#x1F596; <br> 🖖 <br><!--Referencia do Emoji com &#x+codigo e Emoji colado diretamente VS.Code-->
+    &#x1F480; <br> 💀 <br><!--Referencia do Emoji com &#x+codigo e Emoji colado diretamente VS.Code-->
+    &#x1F377; <br> 🍷 <br><!--Referencia do Emoji com &#x+codigo e Emoji colado diretamente VS.Code-->
+    &#x1F5FF; <br> 🗿 <br><!--Referencia do Emoji com &#x+codigo e Emoji colado diretamente VS.Code-->
+    🍷🗿
+</p>
+
+<h1>Testando carga de imagem</h1>
+<p>
+ Abaixo vc vai ver uma imagem que está na mesma pasta. 
+</p>
+<img src="imagens/logo-html.png" alt="Logo do html">
+<p>Podemos também carregar imagens que estão em sub-pastas</p><!--Entre as aspas depois do src= apertando control + espaço o vscode irá exibir as imagens ou pastas onde estão as imagens-->
+<img src="imagens/logo-css.png" alt="Logo do css">
+<p>Podemos também carregar imagens externas como está:</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/146px-Javascript_badge.svg.png" alt="Logo do Javascript"><!--colocar no src="" Link único que referencia os objetos na internet; o endereço da URL onde está a imagem ou arquivo que desejar-->
+
+  <!--HTML5 foca em semantica e não mais em formas,algumas tags estão obsoletas e nçao se aplica mais.-->
+  <p>  
+    Eu moro na <address>Rua das ameganss, XYZ <br>
+      Sampa City - SP</address><!-- Com a tag address ao ser clicada, pode abrir direto no google maps-->
+  </p>
+
+  <h1>Principais formatação</h1>
+  <h2>Negrito / Destaque</h2>
+  <p>Nessa frase temos um <b>termo em Negrito</b>
+     usando a tag ("b") (não semântica).</p>
+     <p> Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag STRONG (semântica).</p>
+     <h2>Itálico / Enfâse</h2>
+         <p>Nesta frase temos um <i>termo em Itálico</i> usando a tag I (não semântica)</p><!--Apertando CTRL+SHIF+p escreva abb = abbreviation digite i e aperte enter -->
+      <p>Nesta frase, temos um <em> termo em ênfase</em> usando a tag EM (semântica)</p>
+     <!--Se a tag tiver sentido HTML5
+      Se a tag for de forma CSS 
+  Utilizar as tags STRONG e a EM ao invés de negrito e itálico-->
+  <h1>Listas</h1>
+  <h1>Trabalhando com Listas</h1>
+  <h2>Listas Ordenadas</h2>
+<ol type="1" start="3"><!--5 tipos de listar "1,A,a,I,i", para escolher o número que começa inserir start depois do type -->
+<li>Acordar</li>
+<li>Tomar café</li>
+<li>Tomar banho</li><!--/li se tornou opcional para fechar a tag -->
+<li>Escovar os dentes</li>
+</ol>
+<br>
+<h2>Listas não Ordenadas</h2>
+<ul type="square"><!--Tipos: disc,circle,square-->
+<li>Pão</li>
+<li>Leite</li>
+<li>Queijo</li>
+<li>Manteiga</li>
+</ul>
+
+<h2>Minhas linguagens favoritas</h2>
+<ol> <!--orderlist -->
+    <li>Antigas</li>
+    <ol type="a">
+        <li>Clipper</li>
+        <li>Visual Basic</li>
+        <li>Fortran</li>
+        <li>Delphi</li>
+    </ol>
+    <li>Novas</li>
+    <ol type="a" start="5"><!-- start="5" referente ao quinto elemento-->
+        <li>PHP</li>
+        <li>Python</li>
+        <li>Javascript</li>
+        <li>Kotlin</li>
+    </ol>
+</ol>
+<h2>Meus jogos favoritos</h2>
+<ol>
+    <li>NES</li>
+    <ul  type="circle"><!--ul=unorderlist-->        <li>Mario Bros</li>
+        <li>Ninja Gaiden</li>
+    </ul>
+    <li>SNES</li>
+    <ul type="square">
+    <li>Mario World</li>
+    <li>Donkey Kong</li>
+    </ul>
+    <li>PlayStation</li>
+    <ul type="square">
+        <li>Final Fantasy</li>
+        <li>Castlevania</li>
+    </ul> <!--Base para criar menus-->
+</ol>
+<h2>Lista de Definiçoes</h2>
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para a criação de um site</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para criação de design de um site</dd>
+    <dt>JAVASCRIPT</dt>
+    <dd>Linguagem de programação para a criação de interatividade de um site </dd>
+</dl>
+
+<h1>Usando links externos</h1>
+    <p>Você pode acessar o meu repositório público no <a href="https://www.github.com/PrTech82/PR-Escola">Github</p></a>
+    <p>Você pode acessar o meu perfil no <a href="https://www.linkedin" target="_blank" rel="external">Linkedin.</a></p><!--target="blank" abre o link em uma nova página-->
+
+    <h1>Imagens dinâmicas com HTML5</h1> 
+
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente altere o tamanho do navegador</p>
+ 
+    <picture>
+     <!--Antes de tudo tem que cropar a imagem (reduzir o tamanho dela no GIMP) e fazer as imagens de diversos tamanho para atender vairios dispositivos-->
+        <source media="(max-width: 720px)" srcset="imagens/Pequena.png" type="image/png"><!--responsavel pela subtistuição para uma imagem menor da mesma imagem --> 
+        <source media="(max-width: 1000px)" srcset="imagens/Media.png" type="image/png"><!--responsavel pela subtistuição para uma imagem menor da mesma imagem-->
+     <img src="imagens/Grande.png" alt="Imagem Flexível">
+ 
+    </picture>
+    
+    <h1>Reproduzindo  Áudio</h1>
+<p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+<audio  controls><!--autoplay preload="metadata"  -->
+    <source src="midia/Justin Timberlake  ft T.I - My Love.mp3" type="audio/mpeg">
+    <source src="midia/Justin-Timberlake-ft-T.I-My-Love.ogg" type="audio/ogg">
+    <source src="midia/Justin-Timberlake-ft-T.I-My-Love.wav" type="audio/wav">
+
+    <p>Infelizmente o seu navegardor não consegue reproduzir o arquivo MP3. Faça o download clicando<a href="midia/Panic.mp3"> aqui.</a>
+    </p>        
+</audio>
+     <p>Infelizmente o seu navegardor não consegue reproduzir o arquivo MP3. Faça o download clicando<a href="midia/Panic.mp3"> aqui.</a></p>
+
+
+   </audio><!-- MP3 WAV OGG-->
+
+   <h1>Inserindo videos hospedados localmente</h1>  
+   <p> Este video esta hospedado no meu proprio servidor</p>
+     
+   <!--Padroes de videos mais utilizados MP4/M4V,WebM,OGG-->
+   <video width="350" poster="" controls>
+       <source src="midia/meu-video.mp4"  type="video/mp4">
+       <source src="midia/meu-video.ogv"  type="video/ogv">
+       <source src="midia/meu-video.webm"  type="video/webm">
+       <source src="midia/meu-video.ogv"  type="video/ogg">
+       <p>Infelizmente o navegador nao suporta esse video</p>
+   
+       </video>
+   
+       <video width="400" poster="imagens/SFINEWATERCOOLER.png" controls loop>
+         <source src="midia/dados.mp4"  type="video/mp4">
+          <source src="midia/Dados.mkv"  type="video/mp4">
+         <source src="midia/Dados.webm"  type="video/webm">
+         <source src="midia/DadosOGV.ogv"  type="video/ogg">  <!--OGV nao funcionou-->
+         <p>Infelizmente o navegador nao suporta esse video</p>
+         </video>
+   <h1>Inserindo videos do YouTube</h1>
+   <!--Videos externos do youtube: clicar em compartilhar, incorporar, selecionar toda a tag iFrame e colar no VSCode -->
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/9u4pU4IQazM?si=01tHTATyE_ct1glL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+   </iframe>
+   <br>
+   
+   
+   <!--Representacao por nomes-->
+    <h2 style="background-color: blue; color:white">Exemplo de cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis expedita doloremque repellat cumque beatae hic, veritatis maiores corrupti, sunt, commodi voluptates numquam minus? Eveniet vitae repellat quibusdam omnis eius rerum.</p>
+    
+    <!--Representacao por codigo hexadecimal-->
+    <!--Decimal: 0 1 2 3 4 5 6 7 8 9-->
+    <!--Hexadecimal: 0 1 2 3 4 5 6 7 8 9 A B C D E F-->
+    <h2 style="background-color: #0000ff; color:#ffffff">Exemplo de cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis expedita doloremque repellat cumque beatae hic, veritatis maiores corrupti, sunt, commodi voluptates numquam minus? Eveniet vitae repellat quibusdam omnis eius rerum.</p>
+    
+    <!--Representacao de cores por rgb red,green,blue.-->
+    <h2 style="background-color:rgb(0,0,255); color: rgb(255,255,255)">Exemplo de cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis expedita doloremque repellat cumque beatae hic, veritatis maiores corrupti, sunt, commodi voluptates numquam minus? Eveniet vitae repellat quibusdam omnis eius rerum.</p>
+    
+    <!--Representacao por HSL (Hue, Sturation, Luminosity)-->
+    <h2 style="background-color:hwb(166 23% 22%);color:rgb(238, 187, 70)">Exemplo de cores</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis expedita doloremque repellat cumque beatae hic, veritatis maiores corrupti, sunt, commodi voluptates numquam minus? Eveniet vitae repellat quibusdam omnis eius rerum.</p>
+    
+    <nav class="menubaixo">    
+
+             
+        <a href="index.html">Home</a>
+        <a href="pag2.html">Pag. 02</a>
+        <a href="cor01.html">Cor 01 </a>  
+        <a href="cor02.html">Cor 02 </a> 
+        <span>
+       </span>
+       
+       </nav>
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</body>
+</html>
